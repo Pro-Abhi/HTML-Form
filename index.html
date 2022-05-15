@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Assignment</title>
+</head>
+
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Student Registration Form</legend>
+
+      <label for="fname">First Name :</label>
+      <input type="text" name="first" id="fname" placeholder="First Name" />
+      <br /><br />
+
+      <label for="lname">Last Name :</label>
+      <input type="text" name="last" id="lname" placeholder="Last Name" />
+      <br /><br />
+
+      <label for="mail">Email ID :</label>
+      <input type="email" name="email" id="mail" placeholder="abc@example.com" />
+      <br /><br />
+
+      <label for="db">Date of Birth :</label>
+      <input type="date" name="bdate" id="db" min="2001-01-01" max="2022-05-15" />
+      <br /><br />
+
+      <label for="tel">Mobile Number :</label>
+      <input type="tel" name="number" id="tel" placeholder="1234567890" maxlength="10" size="10" />
+      <br /><br />
+
+      Gender :
+      <input type="radio" name="gender" id="m" />
+      <label for="m">Male</label>
+      <input type="radio" name="gender" id="f" />
+      <label for="f">Female</label>
+      <input type="radio" name="gender" id="o" />
+      <label for="o">Other</label>
+      <br /><br />
+
+      Address :
+      <textarea name="address" id="" cols="40" rows="3"></textarea>
+      <br /><br />
+
+      City :
+      <select for="city">
+        <option value="mumbai">Mumbai</option>
+        <option value="pune" selected>Pune</option>
+        <option value="ahmednagar">Ahmednagar</option>
+        <option value="nashik">Nashik</option>
+        <option value="nagpur">Nagpur</option>
+        <option value="aurangabad">Aurangabad</option>
+        <option value="amravati">Amravati</option>
+        <option value="nanded">Nanded</option>
+        <option value="kolhapur">Kolhapur</option>
+        <option value="jalgaon">Jalgaon</option>
+        <option value="thane">Thane</option>
+        <option value="satara">Satara</option>
+      </select>
+      <br /><br />
+
+      Pin Code :
+      <input type="text" name="pin" id="code" maxlength="8" size="10" />
+      <br /><br />
+
+      State :
+      <input list="states" id="state" size="15" />
+      <datalist id="states">
+        <option value="Andhra Pradesh"></option>
+        <option value="Delhi"></option>
+        <option value="Goa"></option>
+        <option value="Gujarat"></option>
+        <option value="Jharkhand"></option>
+        <option value="Karnataka"></option>
+        <option value="Kerala"></option>
+        <option value="Madhya Pradesh"></option>
+        <option value="Maharashtra"></option>
+        <option value="Punjab"></option>
+        <option value="Rajasthan"></option>
+        <option value="Sikkim"></option>
+        <option value="Tamil Nadu"></option>
+      </datalist>
+      <br /><br />
+
+      Country :
+      <input type="text" name="country" id="con" value="India" size="10" readonly />
+      <br /><br />
+
+      Hobbies :
+      <input type="checkbox" name="drawing" id="draw" />
+      <label for="draw">Drawing</label>
+      <input type="checkbox" name="singing" id="sing" />
+      <label for="sing">Singing</label>
+      <input type="checkbox" name="dancing" id="dance" />
+      <label for="dance">Dancing</label>
+      <input type="checkbox" name="sketching" id="sketch" />
+      <label for="sketch">Sketching</label>
+      <input type="checkbox" name="other" id="other" />
+      <label for="other">Other</label>
+      <textarea name="hobby" id="other" cols="50" rows="1" placeholder="Write your hobbies here..."></textarea>
+      <br /><br />
+
+      <input type="submit" value="Submit Form" />
+      <input type="reset" value="Cancel" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
